@@ -12,7 +12,7 @@ echo deb '[signed-by=/usr/share/keyrings/frrouting.gpg]' https://deb.frrouting.o
 
 
 # update and install FRR
-sudo apt update && sudo apt install frr frr-pythontools
+sudo apt update && sudo apt install frr frr-pythontools -y
 
 
 
