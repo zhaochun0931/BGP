@@ -13,3 +13,45 @@ echo deb '[signed-by=/usr/share/keyrings/frrouting.gpg]' https://deb.frrouting.o
 
 # update and install FRR
 sudo apt update && sudo apt install frr frr-pythontools
+
+
+
+
+
+# up till the frr is successfully installed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+# how to configure the bgp 
+
+open the file /etc/frr/daemons and change the bgpd to yes
+
+bgpd=yes
+
+
+
+
+
+systemctl daemon-reload
+
+systemctl restart frr
+
+
+
+
+
+
+vtysh
+
+
+
