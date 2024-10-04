@@ -36,3 +36,26 @@ BGP
 Additionally, organizations must use external BGP to connect their corporate network to the internet.
 
 
+
+
+
+
+
+
+Establishing a Peer Connection:
+
+BGP peers establish a TCP connection (typically over port 179) to exchange routing information. This connection is known as a BGP session.
+
+
+
+
+
+Neighbor Configuration:
+
+When configuring BGP, you specify neighbors (peers) using their IP addresses and their respective AS numbers. This establishes the relationship between the two routers.
+
+Example configuration might look like this:
+
+neighbor 192.0.2.1 remote-as 65001
+
+
