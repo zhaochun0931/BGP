@@ -1,4 +1,7 @@
-Border Gateway Protocol (BGP) refers to a gateway protocol that enables the internet to exchange routing information between autonomous systems (AS). 
+Border Gateway Protocol (BGP) refers to a gateway protocol that enables the internet to exchange routing information between different autonomous systems (AS). 
+
+
+
 
 As networks interact with each other, they need a way to communicate. This is accomplished through peering. BGP makes peering possible. Without it, networks would not be able to send and receive information with each other.
 
@@ -23,21 +26,13 @@ An autonomous system is a smaller network under the control of a single administ
 
 
 
+BGP
+|--- External BGP
+|--- Internal BGP
 
 
 
-What are the types of Border Gateway Protocol?
 
-Border Gateway Protocol (BGP) is classified as internal and external, depending on where the data is being routed.
-
-
-External BGP routers connect an autonomous system to the global internet. However, large autonomous systems are themselves made up of smaller autonomous systems within them. Internal BGP routes data within a system.
-
-External BGP vs. internal BGP
-The main difference between internal and external BGP peering is the way the BGP route received from one peer is propagated by default to other peers. Here’s an explanation:
-
-New routes learned from an external BGP peer are re-advertised to all peers
-New routes learned from an internal BGP peer are re-advertised to all external peers only
 Additionally, organizations must use external BGP to connect their corporate network to the internet.
 
-In contrast, there is no obligation to use internal BGP. You can choose from several internal routing protocols based on your organization's networking requirements.
+
